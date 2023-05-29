@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse_coordinates</title>
+</head>
+<body>
+    <canvas width="200" height="200"
+    style="background-color: green">
+</canvas>
+
+<script type="text/javascript">
+    function getMousePosition(canvas, event) {
+        let rect = canvas.getBoundingClientRect();
+        let x = event.clientX - rect.left;
+        let y = event.clientY - rect.top;
+        console.log("Coordinate x: " + x, 
+                    "Coordinate y: " + y);
+    }
+  
+    let canvasElem = document.querySelector("canvas");
+      
+    canvasElem.addEventListener("mousedown", function(e)
+    {
+        getMousePosition(canvasElem, e);
+    });
+    </script>
+    
+</body>
+</html>
