@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <script>
+        function setCookie(cname,cvalue) {
+    document.cookie = cname + "=" + cvalue + ";" ;
+  }
+
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    let user = getCookie("username");
+    var logDate = new Date();
+    if (user != "") {
+      alert("Welcome again " + user);
+      alert("Last visited: " + logDate + ".");
+    } else {
+      user = prompt("Please enter your name:", "");
+      if (user != "" && user != null) {
+        setCookie("username", user);
+      }
+    }
+  }
+    </script> 
+    <style>
+        body{
+            background-color: rgb(255, 74, 168);
+        }
+            .display{
+                position: fixed;
+                display:flex;
+                justify-content: center;
+                top: 40%;
+                left: 25%;
+                font-size: 20px;
+            }
+        
+    </style>
+</head>
+<body onload="checkCookie()">
+    <div class="display">
+        <h1>Program displaying the functionality of cookies</h1>
+    </div>
+   
+    
+</body>
+</html>

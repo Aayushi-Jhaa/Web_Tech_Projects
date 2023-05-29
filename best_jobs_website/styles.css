@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("pexels-miguel-á-padriñán-1111367.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1{
+    position: absolute;
+    left: 7.5rem;
+    top:1rem;
+    font-weight: 100;
+    font-size: 8rem;
+    letter-spacing: 5px;
+    color: aliceblue;
+    opacity: 0.85;
+}
+
+.intro{
+    position: relative;
+    top: 35%;
+    left: 10.5%;
+}
+
+.intro p{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.intro h3{
+    color:aliceblue;
+    font-size: 2rem;
+}
+
+button{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    position: inherit;
+    left: 18rem;
+    top: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.25s ease-in-out;
+    color: black;
+}
+
+.form-container-inactive{
+    opacity: 0;
+}
+
+.form-container-active{
+    height: 70%;
+    width: 500px;
+    background-color: aliceblue;
+
+    position: absolute;
+    top:-10%;
+    left: 55%;
+
+    border-radius: 10px;
+
+    opacity: 1;
+    transition: opacity 0.25s;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.form-container-active p{
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+form{
+    width:400px;
+    position: absolute;
+    top: 100px;
+    left:50px;
+
+    transition: 0.25s ease-in-out;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+::placeholder{
+    font-size: 1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.form2{
+    left: 500px;
+}
+
+.form3{
+    left: 500px;
+}
+
+ul{
+
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 1rem;
+}
