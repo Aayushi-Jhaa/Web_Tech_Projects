@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro{
+  margin-bottom: 2rem;
+}
+
+.imp-info{
+  margin-bottom: 0.5rem;
+}
+
+body{
+  background-color: pink;
+  margin-left: 20%;
+}
+
+h1{
+  padding-bottom: 1rem;
+}
+
+h2{
+  margin-bottom: 1rem;
+}
+
+ul{
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+td{
+  /* border: 1px solid black; */
+  padding: 0.5rem 1rem;
+  padding-right: 5rem;
+}
+
+table{
+  border: 1px dotted black;
+}
+
+.subtext{
+  font-size: 0.75rem;
+}
+
+.meh{
+  display: flex;
+}
+
+
+.buttons{
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-left: 20%;
+}
+
+button{
+  background-color: slateblue;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+}
+
+button:hover{
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 250ms;
+}
+
+.captcha-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.display-code{
+  background-color: grey;
+  color:ivory;
+  border: none;
+}
+
+
+/* .container {
+  padding: 10px;
+ 
+}
+
+input[type=text], input[type=password]{
+    width: 6cm;
+    padding-left: 2 px;
+    margin: 10px 20px 22px 20px;
+    display: inline-block;
+    border: 10 px ;
+    border-color:	#A9A9A9;
+    background: white;
+
+}
+
+  
+a {
+    color: dodgerblue;
+}
+
+.registerbtn {
+    background-color:#39a7eb;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 5cm;
+    opacity: 0.5;
+}
+  
+.registerbtn:hover {
+    opacity:1;
+}
+
+input[id="Passport Office"] {
+  margin-left: 143px;
+
+}
+
+.s1{
+  font-size: 0.5rem;
+}
+
+input{
+  position: absolute;
+  left: 30rem;
+} */

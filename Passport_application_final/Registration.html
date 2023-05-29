@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Registration.css">
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="intro">
+        <h1><b>Passport registration Form</b></h1>
+        <p class="imp-info"><b>Important Information:</b> Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of your residential address.</p>
+
+        <ul>
+            <li>
+                <p><a href="" target="_blank">Click here</a> to check the appointment availability at all PSK/POPSK/PSLK.</p>
+            </li>
+            <li>
+                <p><a href="" target="_blank">Click here</a> to know more about Apply Anywhere in India scheme for Passport Services.</p>
+            </li>
+        </ul>
+    </div>
+
+    <p><h2>User Registration Form</h2></p>
+
+    <form>
+        <table>
+            <tr>
+                <td>Register to apply at*</td>
+                <td> 
+                    <input type="radio">
+                    <label>CPV Delhi</label>
+                    <br>
+                    <input type="radio">
+                    <label>Passport Office</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Passport office* <p class="subtext">(As per Present Residential Address)</p></p>
+                </td>
+                <td>
+                    <select>
+                        <option value="Select">---Select---</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Given Name* <p class="subtext">(Max 45 characters)</p></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Surname <p class="subtext">(Max 45 characters)</p></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Date of birth(MM/DD/YY)*</td>
+                <td><input type="date" class="date-input" required></td>
+            </tr>
+            <tr>
+                <td>E-mail ID* <p class="subtext">(Max 35 characters)</p></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Do you want your Login Id
+                    to be same as E-mail Id?</td>
+                <td class="meh"> 
+                    <input type="radio">
+                    <label>Yes</label>
+                    <br>
+                    <input type="radio">
+                    <label>No</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Login Id*</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Password*</td>
+                <td><input type="text" required id="pass"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password*</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Hint Question*</td>
+                <td>
+                    <select type="text" name="hint" id="hint">
+                        <option value="1">-------Select--------</option>
+                        <option value="2">Birth City</option>
+                        <option value="3">Favorite Colour</option>
+                        <option value="4">Favorite Cricketer</option>
+                        <option value="5">Favorite Food </option>
+                        <option value="6">First School</option>
+                        <option value="7">Make of First car Owned </option>
+                        <option value="8">Mother's Maiden Name</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hint Answer*</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Enter Captcha: </td>
+                <td>
+                    <div class="captcha-inputs">
+                        <input type="text" class="display-code" id="display-code" readonly>
+                        <input type="text" class="form-control" id="textinput">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button type="submit" onclick="validCap()">Register</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+html, body {
+	height: 100%;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-image: linear-gradient(30deg, #000000, #000000);
+}
+.title{
+    margin-top: -350px;
+    color: rgb(182, 10, 139);
+    font-size: 2cm;
+    font-style: italic;
+
+}
+.moon {
+	background-image: linear-gradient(30deg, #ffffff, #ffffff);
+	width: 256px;
+	height: 256px;
+	border-radius: 50%;
+	position: relative;
+    box-shadow: 0 0 20px #f9f3f2,
+				0 0 80px 8px #c7938B;
+}
+.moon::before {
+	content: "";
+	background-color: #000000;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: +2;
+	animation: 10s eclipse linear infinite alternate;
+}
+@keyframes eclipse {
+	0% {
+		transform: translate(-250px, 250px) scale(0.9);
+	}
+	50% {
+		transform: translate(0px, 0px) scale(1.02);
+		background: #000000;
+	}
+	100% {
+		transform: translate(250px, -250px) scale(0.9);
+		box-shadow: none;
+	}
+} 

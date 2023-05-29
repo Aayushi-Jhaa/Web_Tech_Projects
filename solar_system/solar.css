@@ -1,0 +1,238 @@
+.planet:after,.star:after {
+  content:"";
+  position:absolute;
+  width:15px;
+  height:15px;
+  border-radius:60%;
+  transform-origin:center;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+.title{
+  text-align: center;
+  color: rgb(182, 10, 139);
+  font-size: 2cm;
+  font-style: italic;
+
+}
+.planet,.star{
+  position:absolute;
+}
+#sun {
+  transform-origin:center center;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+#sun:after {
+  transform-origin:center center;
+  background: radial-gradient(circle, #FCFC14, #FF7700);
+  box-shadow: 0px 0px 40px #FF7700;
+  margin:auto;
+  width:80px;
+  height:80px;
+
+}
+#mercury {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 4s linear infinite;
+}
+#mercury:after {
+  top:100px;
+  left:100px;
+  width:5px;
+  height:5px;
+  background: radial-gradient(circle, #E86E17, #BA5711);
+}
+.Orbit {
+  margin:auto;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  border-left: 0.5px solid white;
+  border-top : 0.5px solid white;
+  border-right : 1px solid white;
+  border-bottom : 1px solid white;
+  border-radius: 50%;  
+}
+#venus {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 8s linear infinite;
+}
+#venus:after {
+  top:150px;
+  left:150px;
+  width:15px;
+  height:15px;
+  background: radial-gradient(circle, #DB9969, #69462E);
+}
+#earth {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 16s linear infinite;
+}
+#earth:after {
+  top:200px;
+  left:200px;
+  width:20px;
+  height:20px;
+  background: radial-gradient(circle, #5DF505, #114FFA);
+}
+#mars {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 20s linear infinite;
+}
+#mars:after {
+  top:250px;
+  left:250px;
+  width:10px;
+  height:10px;
+  background: radial-gradient(circle, #FA9911, #69410A);
+}
+#jupiter {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 29s linear infinite;
+}
+#jupiter:after {
+  top:300px;
+  left:300px;
+  width:40px;
+  height:40px;
+  background: radial-gradient(circle, #e75e54, #5C421D);
+}
+#saturn {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 35s linear infinite;
+}
+#saturn:after {
+  top:350px;
+  left:350px;
+  width:35px;
+  height:35px;
+  background: radial-gradient(circle, #E08D19, #EBAC54);
+}
+#uranus {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 40s linear infinite;
+}
+#uranus:after {
+  top:400px;
+  left:400px;
+  width:30px;
+  height:30px;
+  background: radial-gradient(circle, #0780E3, #062C9C);
+}
+#neptune {
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  animation:planetMove 49s linear infinite;
+}
+#neptune:after {
+  top:450px;
+  left:450px;
+  width:25px;
+  height:25px;
+  background: radial-gradient(circle, #0541F5, #4105F5);
+}
+
+#mercuryOrbit {
+  width: 140px;
+  height: 140px;
+  animation:spinnerRotate 4s linear infinite;
+	animation:spinnerRotate 4s linear infinite;
+}
+#venusOrbit {
+  width: 210px;
+  height: 210px;
+  animation:spinnerRotate 8s linear infinite;
+	animation:spinnerRotate 8s linear infinite;
+}
+#earthOrbit {
+  width: 280px;
+  height: 280px;
+  animation:spinnerRotate 16s linear infinite;
+	animation:spinnerRotate 16s linear infinite;
+}
+#marsOrbit {
+  width: 350px;
+  height: 350px;
+  animation:spinnerRotate 20s linear infinite;
+	animation:spinnerRotate 20s linear infinite;
+}
+#jupiterOrbit {
+  width: 420px;
+  height: 420px;
+  animation:spinnerRotate 29s linear infinite;
+	animation:spinnerRotate 29s linear infinite;
+}
+#saturnOrbit {
+  width: 490px;
+  height: 490px;
+  animation:spinnerRotate 35s linear infinite;
+	animation:spinnerRotate 35s linear infinite;
+}
+#uranusOrbit {
+  width: 560px;
+  height: 560px;
+  animation:spinnerRotate 40s linear infinite;
+	animation:spinnerRotate 40s linear infinite;
+}
+#neptuneOrbit {
+  width: 630px;
+  height: 630px;
+  animation:spinnerRotate 49s linear infinite;
+	animation:spinnerRotate 49s linear infinite;
+}
+
+
+
+
+
+@keyframes planetMove {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+@keyframes spinnerRotate {
+  0% {transform : rotate(0deg)}
+  100% {transform : rotate(360deg)}
+}
+body {
+  background-color:#222;
+}
