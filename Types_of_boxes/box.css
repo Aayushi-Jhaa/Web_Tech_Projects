@@ -1,0 +1,34 @@
+*{
+    margin: 10px;
+    padding: 10px ;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid white;
+    width: 10%;
+  }
+  
+  button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    transition-duration: 1s;
+  }
+.container{
+    border: 5px solid black;
+    
+    background: linear-gradient(to right, #7f53ac, #657ced);
+
+}
+h2{
+    color: white;
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
