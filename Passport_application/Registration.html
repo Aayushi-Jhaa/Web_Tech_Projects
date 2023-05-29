@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="container">
+            <h1><b>Passport registration Form</b></h1>
+            <p><b>Important Information:</b> Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of your residential address.</p>
+            
+
+            <label class="required"><b>Register to apply at</b></label> 
+            <input type="radio" name="location" id="CPV Delhi">
+            <label for = "CPV Delhi">CPV Delhi</label><br>
+            <input type="radio" name="location"  id="Passport Office">
+            <label for = "Passport Office">Passport Office</label><br><br>
+
+            <label for="Office"><b>Passport Office*</b><br><p class="s1">(As per Present Residential Address)</p></label>
+            <select type="text"name="Country" id="country">
+                <option value="Select">---Select---</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+            </select><br><br>
+
+            <label for="Name"><b>Given Name*</b></label>
+            <input type="text" placeholder="Enter Name" name="Name" id="Name" required><br>
+
+            <label for="Last Name"><b>Surname</b></label>
+            <input type="text" placeholder="Enter Last Name" name="Name" id="Name" ><br>
+
+            <label for="Bday"><b>Date of birth(MM/DD/YY)*</b></label>
+            <input type="date"  name="Name" id="Name" required><br><br>
+
+            <label for="Email"><b>E-mail Id*</b></label>
+            <input type="text" placeholder="Email" name="email" id="email" required><br>
+
+            <label for = "Same email"><b>Do you want the same login Id as E-mail id?</b></label>
+            <input type="radio" name="Same email" id="Yes">
+            <label for = "Yes">Yes</label>
+            <input type="radio" name="Same email" id="No">
+            <label for = "No">No</label><br><br>
+
+            <label for="Login"><b>Login Id*</b></label>
+            <input type="text" name="login" id="login" required><br>
+
+            <label for="pswd"><b>Password*</b></label>
+            <input type="password" name="pswd" id="pswd" required><br>
+
+            <label for="pswd1"><b>Confirm Password*</b></label>
+            <input type="password" name="pswd1" id="pswd1" required><br>
+
+            <label for="Hint"><b>Question Hint*</b></label>
+            <select type="text" name="hint" id="hint">
+                <option value="1">-------Select--------</option>
+                <option value="2">Birth City</option>
+                <option value="3">Favorite Colour</option>
+                <option value="4">Favorite Cricketer</option>
+                <option value="5">Favorite Food </option>
+                <option value="6">First School</option>
+                <option value="7">Make of First car Owned </option>
+                <option value="8">Mother's Maiden Name</option>
+            </select><br><br>
+
+            <label for="Hint Ans"><b>Hint Answer*</b></label>
+            <input type="text" name="ans" id="ans" required><br>
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Register</button>
+
+        </div>
+    </form>
+    
+</body>
+</html>

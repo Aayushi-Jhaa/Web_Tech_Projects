@@ -1,0 +1,51 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+ 
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password]{
+    width: 6cm;
+    padding-left: 2 px;
+    margin: 10px 20px 22px 20px;
+    display: inline-block;
+    border: 10 px ;
+    border-color:	#A9A9A9;
+    background: white;
+
+  }
+
+  
+  a {
+    color: dodgerblue;
+  }
+
+  .registerbtn {
+    background-color:#39a7eb;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 5cm;
+    opacity: 0.5;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+
+input[id="Passport Office"] {
+  margin-left: 143px;
+
+}
+
+.s1{
+  font-size: 0.5rem;
+}
+
