@@ -1,6 +1,5 @@
 # Web_Tech_Projects
-This GitHub repository showcases a collection of web technology projects developed during my third year of college. 
-Each project demonstrates my proficiency in various web technologies and highlights my practical understanding of building dynamic and interactive web applications. 
+This GitHub repository displays a range of web technology projects I've worked on while delving into web development. Each project serves as a demonstration of my skills in different web technologies, showcasing my hands-on experience in creating dynamic and engaging web applications.
 It consistes of the following:
 1. Test various HTML commands and tags and also write an HTML document to display your class Time Table using tables.
 2. Write a HTML document to display your resume in a neat format.
